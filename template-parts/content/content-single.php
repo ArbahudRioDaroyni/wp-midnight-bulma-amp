@@ -29,10 +29,10 @@
 				<?php
 				if ( has_post_thumbnail() ) {
 					$isMobile = (wp_is_mobile()) ?
-						the_post_thumbnail('medium', ['class' => 'img-hero', 'loading' => 'lazy']) :
-						the_post_thumbnail(NULL, ['class' => 'img-hero', 'loading' => 'lazy']);
+						the_post_thumbnail('medium', ['class' => 'img-hero object-fit-cover', 'loading' => 'lazy']) :
+						the_post_thumbnail(NULL, ['class' => 'img-hero object-fit-cover', 'loading' => 'lazy']);
 				} else { ?>
-					<img src="<?= get_first_image_in_post() ?>" class="img-hero" alt="<?= get_the_title() ?>" />
+					<img src="<?= get_first_image_in_post() ?>" class="img-hero object-fit-cover" alt="<?= get_the_title() ?>" />
 				<?php } ?>
 			</figure>
 		</div>

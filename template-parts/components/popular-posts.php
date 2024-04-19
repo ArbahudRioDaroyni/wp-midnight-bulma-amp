@@ -28,12 +28,12 @@
             // check if the post or page has a Featured Image assigned to it.
             if ( has_post_thumbnail() ) {
               the_post_thumbnail( null, [
-                'class' => 'mb-5 image is-fullwidth',
+                'class' => 'mb-5 image is-fullwidth object-fit-cover',
                 'alt' => get_the_title(),
-                'style' => 'height:200px;object-fit:cover;'
+                'style' => 'height:200px;'
               ] );
             } else { ?>
-              <img src="<?= get_first_image_in_post() ?>" class="mb-5 image is-fullwidth" alt="<?= get_the_title() ?>" loading="lazy" style="height:200px;object-fit:cover;" />
+              <img src="<?= get_first_image_in_post() ?>" class="mb-5 image is-fullwidth object-fit-cover" alt="<?= get_the_title() ?>" loading="lazy" style="height:200px;" />
             <?php } ?>
 
             <h5 class="is-inline-block has-text-primary-gradient mb-2"><?= get_the_title() ?></h5>
