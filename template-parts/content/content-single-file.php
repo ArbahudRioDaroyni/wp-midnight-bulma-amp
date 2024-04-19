@@ -40,7 +40,6 @@
 								src="<?= get_template_directory_uri() . '/assets/svg/star-white.svg' ?>"
 								width="18"
 								height="18"
-								layout="responsive"
 								class="mr-2"
 							>
 							<p class="m-0 is-size-6" itemprop="ratingValue">4.8</p>
@@ -54,7 +53,6 @@
 								src="<?= get_template_directory_uri() . '/assets/svg/comments-white.svg' ?>"
 								width="18"
 								height="18"
-								layout="responsive"
 								class="mr-2"
 							>
 							<a href="#comments" class="is-size-6" rel="nofollow">
@@ -68,7 +66,6 @@
 								src="<?= get_template_directory_uri() . '/assets/svg/download-white.svg' ?>"
 								width="18"
 								height="18"
-								layout="responsive"
 								class="mr-2"
 							>
 							<p class="m-0 is-size-6" itemprop="ratingCount"><?= get_post_view() ?></p>
@@ -81,7 +78,6 @@
 								src="<?= get_template_directory_uri() . '/assets/svg/download.svg' ?>"
 								width="18"
 								height="18"
-								layout="responsive"
 							>
 							<span class="ml-2">Download (<?= esc_attr( get_post_meta( get_the_ID(), 'size', true ) ); ?>)</span>
 						</a>
@@ -122,7 +118,6 @@
 							src="<?= get_template_directory_uri() . '/assets/svg/download.svg' ?>"
 							width="17"
 							height="18"
-							layout="responsive"
 						>
 						&nbsp;Dropbox
 					</a>
